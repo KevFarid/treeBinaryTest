@@ -51,5 +51,24 @@ namespace ArbolBinario
 
             return tree;
         }
+
+        public void showTree(Nodo tree, int cont)
+        {
+            if( tree == null)
+            {
+                return;
+            }
+            else
+            {
+                showTree( tree.rigth, cont + 1);
+                for(int i=0; 1 < cont; i++)
+                {
+                    Console.WriteLine("    ");
+                }
+
+                Console.WriteLine(tree.num);
+                showTree(tree.left, cont + 1);
+            }
+        }
     }
 }

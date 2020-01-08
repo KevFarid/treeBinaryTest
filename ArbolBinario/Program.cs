@@ -32,7 +32,8 @@ namespace ArbolBinario
                         break;
 
                     case "2":
-                        Console.WriteLine("\n\nNodo imprimido");
+                        Console.WriteLine("\n==========================\nNodo imprimido\n\n");
+                        arbolBinario.showTree(tree, 0);
                         Console.ReadKey();
                         break;
 
