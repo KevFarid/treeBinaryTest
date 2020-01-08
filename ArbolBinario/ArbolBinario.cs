@@ -29,7 +29,7 @@ namespace ArbolBinario
 
         public Nodo insertNodo(Nodo tree, int num)
         {
-            if(tree.num == 0)
+            if(tree == null)
             {
                 Nodo new_root = createNodo(num);
                 tree = new_root;

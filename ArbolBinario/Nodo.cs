@@ -11,12 +11,5 @@ namespace ArbolBinario
         public Nodo rigth;
         public Nodo left;
         public int num;
-
-        public Nodo()
-        {
-            this.num = num;
-            this.rigth = null;
-            this.left = null;
-        }
     }
 }

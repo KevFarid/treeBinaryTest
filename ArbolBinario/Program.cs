@@ -10,17 +10,38 @@ namespace ArbolBinario
     {
         static void Main(string[] args)
         {
-            ArbolBinario arbolBinario = new ArbolBinario();
-            Nodo tree = new Nodo();
-            Console.WriteLine("Inserte el numero para el nodo");
-            string textNum = Console.ReadLine();
-            int num = Convert.ToInt32(textNum);
+            string text;
+            int num;
 
-            tree = arbolBinario.insertNodo(tree, num);
-            Console.WriteLine(tree.num);
-            Console.WriteLine(tree.left);
-            Console.WriteLine(tree.rigth);
-            Console.ReadKey();
+            ArbolBinario arbolBinario = new ArbolBinario();
+            Nodo tree = null;
+            do
+            {
+                Console.WriteLine("\n================================");
+                Console.WriteLine("1.insertar nodo \n2.Imprimir \n3.Salir");
+
+                text = Console.ReadLine();
+
+
+                switch (text)
+                {
+                    case "1":
+                        Console.WriteLine("\n==========================\nInserte el numero para el nodo");
+                        num = Convert.ToInt32(Console.ReadLine());
+                        tree = arbolBinario.insertNodo(tree, num);
+                        break;
+
+                    case "2":
+                        Console.WriteLine("\n\nNodo imprimido");
+                        Console.ReadKey();
+                        break;
+
+                    default:
+                        break;
+                }
+
+            } while (text != "3");
+
         }
     }
 }
