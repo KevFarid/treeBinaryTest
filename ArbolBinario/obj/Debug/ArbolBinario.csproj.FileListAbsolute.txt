@@ -5,3 +5,9 @@ C:\Users\kevin.cruz\source\repos\ArbolBinario\ArbolBinario\obj\Debug\ArbolBinari
 C:\Users\kevin.cruz\source\repos\ArbolBinario\ArbolBinario\obj\Debug\ArbolBinario.csproj.CoreCompileInputs.cache
 C:\Users\kevin.cruz\source\repos\ArbolBinario\ArbolBinario\obj\Debug\ArbolBinario.exe
 C:\Users\kevin.cruz\source\repos\ArbolBinario\ArbolBinario\obj\Debug\ArbolBinario.pdb
+D:\Projects\Projects\treeBinaryTest\ArbolBinario\bin\Debug\ArbolBinario.exe.config
+D:\Projects\Projects\treeBinaryTest\ArbolBinario\bin\Debug\ArbolBinario.exe
+D:\Projects\Projects\treeBinaryTest\ArbolBinario\bin\Debug\ArbolBinario.pdb
+D:\Projects\Projects\treeBinaryTest\ArbolBinario\obj\Debug\ArbolBinario.csprojAssemblyReference.cache
+D:\Projects\Projects\treeBinaryTest\ArbolBinario\obj\Debug\ArbolBinario.exe
+D:\Projects\Projects\treeBinaryTest\ArbolBinario\obj\Debug\ArbolBinario.pdb

@@ -40,11 +40,11 @@ namespace ArbolBinario
 
                 if( num < rootValue)
                 {
-                    insertNodo(tree.left, num);
+                    tree.left = insertNodo(tree.left, num);
                 }
                 else
                 {
-                    insertNodo(tree.rigth, num);
+                    tree.rigth = insertNodo(tree.rigth, num);
                 }
 
             }
@@ -61,9 +61,9 @@ namespace ArbolBinario
             else
             {
                 showTree( tree.rigth, cont + 1);
-                for(int i=0; 1 < cont; i++)
+                for(int i=0; i < cont; i++)
                 {
-                    Console.WriteLine("    ");
+                    Console.Write("  ");
                 }
 
                 Console.WriteLine(tree.num);
