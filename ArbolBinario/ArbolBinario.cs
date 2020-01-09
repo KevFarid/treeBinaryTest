@@ -70,5 +70,49 @@ namespace ArbolBinario
                 showTree(tree.left, cont + 1);
             }
         }
+
+        public Nodo LCA(Nodo root, Nodo nodo1, Nodo nodo2)
+        {
+            if( root == null)
+            {
+                return null;
+            }
+
+            if ( root == nodo1 || root == nodo2 )
+            {
+                return root;
+            }
+
+            Nodo left = LCA( root.left, nodo1, nodo2 );
+            Nodo rigth = LCA( root.rigth, nodo1, nodo2 );
+
+            if( left != null && rigth != null)
+            {
+                return root;
+            }
+
+            return (left != null) ? left : rigth;
+        }
+
+        public Nodo findNodo(Nodo tree, int node)
+        {
+            if( tree == null)
+            {
+                return null;
+            }
+            else if( node < tree.num )
+            {
+                return findNodo(tree.left, node);
+            }
+            else if ( node > tree.num )
+            {
+                return findNodo(tree.rigth, node);
+            }
+            else
+            {
+                return tree;
+            }
+
+        }
     }
 }

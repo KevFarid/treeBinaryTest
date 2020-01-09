@@ -18,7 +18,7 @@ namespace ArbolBinario
             do
             {
                 Console.WriteLine("\n================================");
-                Console.WriteLine("1.insertar nodo \n2.Imprimir \n3.Salir");
+                Console.WriteLine("1.insertar nodo \n2.Imprimir \n3.Lowest Common Ancestor \n4.Salir");
 
                 text = Console.ReadLine();
 
@@ -36,12 +36,31 @@ namespace ArbolBinario
                         arbolBinario.showTree(tree, 0);
                         Console.ReadKey();
                         break;
+                    case "3":
+                        Console.WriteLine("\n==========================\nLowest Common Ancestor");
+
+                        int nodo1;
+                        int nodo2;
+                        Nodo nodoAncestor;
+
+                        Console.WriteLine("Escriba el par de nodo que quiera buscar");
+                        Console.WriteLine("Escriba el nodo 1");
+                        nodo1 = Convert.ToInt32( Console.ReadLine() );
+                        
+                        Console.WriteLine("Escriba el nodo 2");
+                        nodo2 = Convert.ToInt32( Console.ReadLine() );
+
+                        nodoAncestor = arbolBinario.LCA(tree, arbolBinario.findNodo(tree, nodo1), arbolBinario.findNodo(tree, nodo2));
+
+                        Console.WriteLine( "Ancestor{" + nodo1 + ", " + nodo2 + "} = " + nodoAncestor.num);
+                        Console.ReadKey();
+                        break;
 
                     default:
                         break;
                 }
 
-            } while (text != "3");
+            } while (text != "4");
 
         }
     }
